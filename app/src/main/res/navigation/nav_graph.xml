@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/start2">
+
+    <fragment
+        android:id="@+id/add2"
+        android:name="com.example.todolist.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_add2_to_start2"
+            app:destination="@id/start2" />
+    </fragment>
+    <fragment
+        android:id="@+id/details"
+        android:name="com.example.todolist.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_details_to_start2"
+            app:destination="@id/start2" />
+        <argument
+            android:name="titel"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="date1"
+            app:argType="string" />
+        <argument
+            android:name="date2"
+            app:argType="string" />
+        <argument
+            android:name="postion"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/start2"
+        android:name="com.example.todolist.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_start2_to_add2"
+            app:destination="@id/add2" />
+        <action
+            android:id="@+id/action_start2_to_details"
+            app:destination="@id/details" />
+    </fragment>
+</navigation>

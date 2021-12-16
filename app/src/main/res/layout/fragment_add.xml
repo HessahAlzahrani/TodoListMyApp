@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/describtion_di"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="17dp"
+            android:hint="input describtion"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/createdateid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/daydateid" />
+
+        <Button
+            android:id="@+id/button2id"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="165dp"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createdateid" />
+
+        <EditText
+            android:id="@+id/daydateid"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="date"
+            app:layout_constraintBottom_toTopOf="@+id/describtion_di"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/w_titelid"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/createdateid"
+            android:layout_width="190dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="17dp"
+            android:inputType="date"
+            app:layout_constraintBottom_toTopOf="@+id/button2id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/describtion_di"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textaddid"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="74dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="16dp"
+            android:text="add you'r task "
+            app:layout_constraintBottom_toTopOf="@+id/w_titelid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/w_titelid"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="25dp"
+            android:hint="add titel"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/daydateid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textaddid"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
